@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Airlines_Kylosov.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,20 @@ namespace Airlines_Kylosov.Pages
     /// </summary>
     public partial class Ticket : Page
     {
+        public List<Classes.TicketContext> AllTickets;
+
         public Ticket(string from, string to)
         {
-            InitializeComponent();
+            InitializeComponent();                                                                                            
+            AllTickets = TicketContext.AllTickets().FindAll(x => (x.From.ToLower() == from.ToLower() && to == "") || 
+                                                                 (x.To.ToLower() == to.ToLower() && from.ToLower() == "") || (x.From == from && x.To == x.To));
+            CreateUI();
+        }
+
+        public void CreateUI()
+        {
+            foreach (Classes.TicketContext x in AllTickets)
+                parent.Children.Add(new Element.Item(x));
         }
     }
 }

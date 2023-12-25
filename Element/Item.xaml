@@ -15,16 +15,16 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Column="0">
-            <Label Content="1999 P" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Margin="0,34,0,0"/>
+            <Label x:Name="lprice" Content="1999 P" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" Margin="0,34,0,0"/>
             <Button Content="Подробнее" Margin="0,71,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="25" Width="76" Background="#FF4000" BorderBrush="#FF4000" Foreground="White"/>
         </Grid>
 
         <Grid Grid.Column="1">
             <Label Content="JHD airlanes" HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,10,0,0" FontSize="12"/>
-            <Label Content="05:50"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,40,0,0" FontSize="16" FontWeight="Bold"/>
+            <Label x:Name="fromTime" Content="05:50"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,40,0,0" FontSize="16" FontWeight="Bold"/>
 
-            <Label Content="Лондон"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,70,0,0" FontSize="9"/>
-            <Label Content="29 сентября 2021"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,100,0,20" FontSize="9"/>
+            <Label x:Name="from" Content="Лондон"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,70,0,0" FontSize="9"/>
+            <Label x:Name="fromDate" Content="29.12.2021"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,100,0,20" FontSize="9"/>
         </Grid>
 
         <Grid Grid.Column="2">
@@ -39,16 +39,16 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Label Content="В пути: 2ч 15м" HorizontalAlignment="Center" VerticalAlignment="Top"  FontSize="9" Margin="0,45,0,0"/>
+            <Label x:Name="TimeFly" Content="В пути: 2ч 15м" HorizontalAlignment="Center" VerticalAlignment="Top"  FontSize="9" Margin="0,45,0,0"/>
             <Grid Background="#939393" Height="5" Width="210" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,70,0,0"/>
         </Grid>
 
         <Grid Grid.Column="3">
             <Label Content="JHD airlanes" HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,10,0,0" FontSize="12"/>
-            <Label Content="06:50"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,40,0,0" FontSize="16" FontWeight="Bold"/>
+            <Label x:Name="toTime" Content="06:50"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,40,0,0" FontSize="16" FontWeight="Bold"/>
 
-            <Label Content="Лондон"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,70,0,0" FontSize="9"/>
-            <Label Content="29 сентября 2021"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,100,0,0" FontSize="9"/>
+            <Label x:Name="to" Content="Лондон"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,70,0,0" FontSize="9"/>
+            <Label x:Name="toDate" Content="29.12.2021"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,100,0,0" FontSize="9"/>
 
         </Grid>
     </Grid>

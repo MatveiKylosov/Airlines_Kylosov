@@ -25,6 +25,7 @@ namespace Airlines_Kylosov
         {
             InitializeComponent();
             Instance = this;
+            OpenPage(new Pages.Main());
         }
 
         public void OpenPage(Page page)
