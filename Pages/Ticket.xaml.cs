@@ -20,7 +20,7 @@ namespace Airlines_Kylosov.Pages
     /// </summary>
     public partial class Ticket : Page
     {
-        public Ticket()
+        public Ticket(string from, string to)
         {
             InitializeComponent();
         }

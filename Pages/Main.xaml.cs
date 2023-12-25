@@ -24,5 +24,10 @@ namespace Airlines_Kylosov.Pages
         {
             InitializeComponent();
         }
+
+        private void Search(object sender, RoutedEventArgs e)
+        {
+            MainWindow.Instance.OpenPage(new Pages.Ticket(from.Text, to.Text));
+        }
     }
 }

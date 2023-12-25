@@ -20,9 +20,21 @@ namespace Airlines_Kylosov
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow Instance { get; private set; }
         public MainWindow()
         {
             InitializeComponent();
+            Instance = this;
+        }
+
+        public void OpenPage(Page page)
+        {
+            frame.Navigate(page);
+        }
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
