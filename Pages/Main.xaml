@@ -14,10 +14,24 @@
 
         <Label Content="Откуда:" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="white" Margin="0,0,200,90"/>
         <TextBox x:Name="from" Width="252" Height="25" HorizontalAlignment="Center" Margin="0,0,0,40" VerticalAlignment="Center"/>
+        <DatePicker x:Name="fromDate" Height="25" HorizontalAlignment="Center" Width="252" VerticalAlignment="Center" FontSize="14"  Margin="0,70,0,40">
+            <DatePicker.Resources>
+                <Style TargetType="DatePicker">
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Style>
+            </DatePicker.Resources>
+        </DatePicker>
 
-        <Label Content="Куда:" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="white" Margin="0,30,200,0"/>
-        <TextBox x:Name="to" Width="252" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,80,0,0"/>
-
-        <Button Background="#FF4000" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Height="25" Content="Найти" Foreground="White" Margin="150,160,0,0" Click="Search"/>
+        <Label Content="Куда:" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="white" Margin="0,80,200,0"/>
+        <TextBox x:Name="to" Width="252" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,130,0,0"/>
+        <DatePicker x:Name="toDate" Height="25" HorizontalAlignment="Center" Width="252" VerticalAlignment="Center" FontSize="14"  Margin="0,240,0,40">
+            <DatePicker.Resources>
+                <Style TargetType="DatePicker">
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                </Style>
+            </DatePicker.Resources>
+        </DatePicker>
+        
+        <Button Background="#FF4000" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Height="25" Content="Найти" Foreground="White" Margin="150,260,0,0" Click="Search"/>
     </Grid>
 </Page>

@@ -11,7 +11,7 @@ namespace Airlines_Kylosov.Classes
 {
     public class TicketContext : Ticket
     {
-        public TicketContext(int price, string from, string to, DateTime startTime, DateTime endTime) : base(price, from, to, startTime, endTime)
+        public TicketContext(int price, string from, string to, DateTime startTime, DateTime endTime) : base(price, from.ToLower(), to.ToLower(), startTime, endTime)
         {
 
         }
@@ -27,8 +27,8 @@ namespace Airlines_Kylosov.Classes
             {
                 allTickets.Add(new TicketContext(
                     ticketQuery.GetInt32(3),
-                    ticketQuery.GetString(1),
-                    ticketQuery.GetString(2),
+                    ticketQuery.GetString(1).ToLower(),
+                    ticketQuery.GetString(2).ToLower(),
                     ticketQuery.GetDateTime(4),
                     ticketQuery.GetDateTime(5)
                     )) ;

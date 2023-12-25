@@ -20,7 +20,7 @@
         </Grid>
 
         <Grid Grid.Column="1">
-            <Label Content="JHD airlanes" HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,10,0,0" FontSize="12"/>
+            <Label Content="JD airlanes" HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,10,0,0" FontSize="12"/>
             <Label x:Name="fromTime" Content="05:50"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,40,0,0" FontSize="16" FontWeight="Bold"/>
 
             <Label x:Name="from" Content="Лондон"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,70,0,0" FontSize="9"/>
@@ -44,7 +44,7 @@
         </Grid>
 
         <Grid Grid.Column="3">
-            <Label Content="JHD airlanes" HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,10,0,0" FontSize="12"/>
+            <Label Content="JD airlanes" HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,10,0,0" FontSize="12"/>
             <Label x:Name="toTime" Content="06:50"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,40,0,0" FontSize="16" FontWeight="Bold"/>
 
             <Label x:Name="to" Content="Лондон"        HorizontalAlignment="Left"   VerticalAlignment="Top" Margin="10,70,0,0" FontSize="9"/>
